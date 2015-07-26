@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:id="@+id/RL"
+    tools:context="com.example.login.EditProfile">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:onClick="next"
+
+
+        android:text="I&apos;m Done!"
+        android:layout_alignBottom="@+id/TableLayout"
+         />
+
+    <TableLayout
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:id="@+id/TableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="#ffe7e7e7">
+
+           <EditText
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+               android:gravity="center"
+               android:layout_weight="1"
+               android:textColor="#ff000000"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:background="@null"
+               android:hint="DISPLAY NAME"
+               android:id="@+id/displayName" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#ffe7e7e7"
+            android:weightSum="2">
+
+
+            <ToggleButton
+                android:id="@+id/btnMale"
+                android:layout_width="0dp"
+                android:textColor="#ff000000"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/topping_selector"
+                android:checked="false"
+                android:onClick="ocMale"
+                android:textOff="Male"
+                android:textOn="Male"
+                android:textSize="8pt" />
+
+            <ToggleButton
+                android:id="@+id/btnFemale"
+                android:textColor="#ff000000"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/topping_selector"
+                android:checked="false"
+                android:onClick="ocFemale"
+                android:textOff="Female"
+                android:textOn="Female"
+                android:textSize="8pt" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:weightSum="1"
+            android:background="#ffe7e7e7">
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/age"
+                android:textColor="#ff000000"
+                android:gravity="center"
+                android:background="@null"
+                android:singleLine="true"
+                android:hint="AGE"
+
+                android:autoText="false" />
+
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginTop="10dp"
+            android:background="#ffe7e7e7">
+
+            <Spinner
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="50dp"
+
+                android:id="@+id/spinner"
+                android:clickable="true"
+                android:spinnerMode="dialog"
+                android:background="@drawable/combo_button">
+
+            </Spinner>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginTop="10dp"
+            android:background="#ffe7e7e7">
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#ff000000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Description"
+                android:id="@+id/description" />
+
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>

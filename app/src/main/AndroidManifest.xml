@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.login" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splash_Screen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Profile"
+            android:label="@string/title_activity_profile" >
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Login" >
+
+        </activity>
+        <activity
+            android:name=".EditProfile"
+            android:label="@string/title_activity_edit_profile" >
+        </activity>
+        <activity
+            android:name=".LoadingScreen"
+            android:label="@string/title_activity_loading_screen" >
+        </activity>
+        <activity
+            android:name=".NabuSetting"
+            android:label="@string/title_activity_nabu_setting" >
+        </activity>
+
+    </application>
+
+</manifest>

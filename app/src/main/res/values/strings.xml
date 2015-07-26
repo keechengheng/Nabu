@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Login</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_splash__screen">Splash_Screen</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_edit_profile">Spice up your profile </string>
+    <string name="title_activity_loading_screen">LoadingScreen</string>
+
+    <string-array name="countries">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Bahamas</item>
+        <item>Bahrain</item>
+        <item>Barbados</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Denmark</item>
+        <item>Dominican Republic</item>
+        <item>Singapore</item>
+    </string-array>
+    <string name="title_activity_nabu_setting">NabuSetting</string>
+    <string name="title_activity_main_activity2">MainActivity2Activity</string>
+
+</resources>

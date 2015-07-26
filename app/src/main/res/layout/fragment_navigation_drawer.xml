@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    tools:context="com.example.login.NavigationDrawerFragment">
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="Begin Game"
+        android:onClick="beginGame"
+        android:id="@+id/btnBeginGame"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="Settings"
+        android:onClick="setting"
+        android:id="@+id/btnSetting"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnBeginGame"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="Log Out"
+        android:onClick="logout"
+        android:id="@+id/btnLogOut"
+        android:layout_below="@+id/btnSetting"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

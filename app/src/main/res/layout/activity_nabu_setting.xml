@@ -1,0 +1,70 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.login.NabuSetting">
+
+<include
+    android:id="@+id/app_bar"
+    layout="@layout/app_bar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Selected Nabu Name"
+            android:id="@+id/TVnabuName"
+            android:layout_below="@+id/app_bar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Selected Nabu BandID"
+            android:id="@+id/TVnabuID"
+            android:layout_below="@+id/TVnabuName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Selected Nabu SerialNumber"
+            android:id="@+id/TVnabuSN"
+            android:layout_below="@+id/TVnabuID"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Selected Nabu Model"
+            android:id="@+id/TVnabuModel"
+            android:layout_below="@+id/TVnabuSN"/>
+
+    <Button
+        android:layout_below="@+id/TVnabuModel"
+        android:layout_width="match_parent"
+        android:text="Select Nabu"
+        android:onClick="selectNabu"
+        android:id="@+id/btnSelectNabu"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Selected Nabu Model"
+        android:id="@+id/TVenableFitness"
+        android:layout_below="@+id/btnSelectNabu"/>
+    <Button
+        android:layout_below="@+id/TVenableFitness"
+        android:layout_width="match_parent"
+        android:text="Save Changes"
+        android:onClick="saveChanges"
+        android:id="@+id/btnSaveChanges"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+
